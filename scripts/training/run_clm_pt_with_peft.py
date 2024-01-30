@@ -602,7 +602,6 @@ def main():
             revision=model_args.model_revision,
             use_auth_token=True if model_args.use_auth_token else None,
             torch_dtype=torch_dtype,
-            low_cpu_mem_usage=False,
             device_map="cpu",
             load_in_4bit=load_in_4bit,
             load_in_8bit=load_in_8bit,
